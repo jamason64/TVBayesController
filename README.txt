@@ -1,5 +1,9 @@
 README.txt
 ==========
+Bayesian Optimisation as a Controller for Peripheral Stimulation
+James Mason 2023
+University of Oxford
+
 
 Project Overview
 ----------------
