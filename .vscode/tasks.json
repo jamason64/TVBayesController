@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+	  {
+		"label": "build",
+		"type": "shell",
+		"command": "g++",
+		"args": [
+		"-I/opt/homebrew/include/eigen3",  // <- change this to your Eigen path
+		"minimal_implementation.cpp",
+		"test_functions.cpp",
+		"gplibrary.cpp",
+		"-o",
+		"main.out"
+		],
+		"group": {
+		  "kind": "build",
+		  "isDefault": true
+		}
+	  }
+	]
+  }
