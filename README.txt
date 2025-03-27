@@ -15,18 +15,16 @@ Files and Directories
 ---------------------
 1. gplibrary.hpp / gplibrary.cpp
    - The library/controller
-   - Contain Gaussian Process routines.
-   - Manage updating and predicting from the model.
 
 2. toplevel.cpp
-   - Main program driving the Bayesian optimisation loop.
+   - A usage example of the library
    - Set-up for testing as in write-up
 
 3. test_functions.hpp / test_functions.cpp
    - Provide simulated objective functions for testing
 
 4. interpretcsv.ipynb
-   - Jupyter notebook for analysing CSV outputs.
+   - Jupyter notebook for analysing CSV outputs of toplevel.cpp
 
 5. data.csv
    - output of toplevel.cpp.
@@ -39,7 +37,8 @@ Files and Directories
 
 Functionality
 -------------
-- Continually refines a model mapping stimulation parameters to outcomes (e.g. tremor reduction).
+- Finds a optimal outcome for a changing black box system by continually refining a model mapping stimulation parameters to outcomes (e.g. tremor reduction).
+Key features over standard bayesian optimisation: 
 - Adjusts exploration bias with the difference between expected and true information gain/uncertainty
 - Uses a "sliding window" or "forgetting" approach so that older data is less dominant.
 
